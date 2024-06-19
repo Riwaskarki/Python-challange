@@ -16,7 +16,7 @@ df_Budget = pd.read_csv(r"C:\Users\karki\Downloads\Starter_Code (4)\Starter_Code
 # In[6]:
 
 
-df_Budget.head()
+df_Budget.head(5)
 
 
 # In[8]:
