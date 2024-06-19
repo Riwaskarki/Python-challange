@@ -58,6 +58,10 @@ df_election['Candidate'].value_counts(normalize=True)
 df_percent = df_election['Candidate'].value_counts(normalize=True).mul(100).round(3).astype(str) + '%'
 df_percent
 
+#using head to get the top value
+df_winner = df_percent.head(1)
+df_winner
+
 
 # In[98]:
 
@@ -69,7 +73,8 @@ print(df_election_total)
 print('----------------------------------')
 print(df_percent)
 print('----------------------------------')
-print('Winner : Diana DeGette with 73.812% vote')
+print('Winner')
+print(df_winner)
 print('----------------------------------')
       
 
